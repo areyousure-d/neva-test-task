@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/neva-test-task/static/js/main.173ab710.chunk.js",
+    "main.js.map": "/neva-test-task/static/js/main.173ab710.chunk.js.map",
+    "runtime-main.js": "/neva-test-task/static/js/runtime-main.22decaf4.js",
+    "runtime-main.js.map": "/neva-test-task/static/js/runtime-main.22decaf4.js.map",
+    "static/js/2.54fc74f3.chunk.js": "/neva-test-task/static/js/2.54fc74f3.chunk.js",
+    "static/js/2.54fc74f3.chunk.js.map": "/neva-test-task/static/js/2.54fc74f3.chunk.js.map",
+    "index.html": "/neva-test-task/index.html",
+    "static/js/2.54fc74f3.chunk.js.LICENSE.txt": "/neva-test-task/static/js/2.54fc74f3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.22decaf4.js",
+    "static/js/2.54fc74f3.chunk.js",
+    "static/js/main.173ab710.chunk.js"
+  ]
+}
