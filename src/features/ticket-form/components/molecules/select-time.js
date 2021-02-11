@@ -7,7 +7,6 @@ import { schedule } from "../../schedule";
 import { setABTime, setBATime } from "../../../redux/actions/time-actions";
 import { getLocalTime } from "../../../../lib/getLocalTime";
 
-// todo: rename startTime and secondTime
 const SelectTime = () => {
   const dispatch = useDispatch();
   const { direction, ABTime, BATime } = useSelector(
@@ -31,8 +30,6 @@ const SelectTime = () => {
     setBAValue(e.target.value);
     dispatch(setBATime(e.target.value));
   };
-
-  console.log("SelectTime direction: ", direction);
 
   if (direction === "ab") {
     ABOptionsValue = schedule.ab.map((time) => getLocalTime(time));
@@ -75,10 +72,6 @@ const SelectTime = () => {
       );
   });
 
-  console.log("direction", direction);
-  console.log("ABTime", ABTime);
-  console.log("BATime", BATime);
-
   return (
     <div>
       <h1>Выберите время отправления</h1>
@@ -88,7 +81,8 @@ const SelectTime = () => {
         onChange={ABOnChange}
         placeholder="Выберите время"
       >
-        {direction === "ab" ? ABOptions : BAOptions}
+        {direction === "ab" && ABOptions}
+        {direction === "ba" && BAOptions}
         {direction === "aba" && ABOptions}
       </Select>
       {direction === "aba" && (
