@@ -16,7 +16,7 @@ export const SubpageTemplate = ({
       <Heading size="md">{title}</Heading>
       <Text mb={2}>{statusText}</Text>
       {children}
-      <Flex justifyContent="space-between">
+      <Flex mt={4} justifyContent="space-between">
         {backTitle && <Button onClick={backOnClick}>{backTitle}</Button>}
         {nextTitle && <Button onClick={nextOnClick}>{nextTitle}</Button>}
       </Flex>
