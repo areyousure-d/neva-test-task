@@ -12,8 +12,9 @@ export const Time = () => {
   const history = useHistory();
   const toast = useToast();
 
-  const ABTime = useSelector((state) => state.timeReducer.ABTime);
-  const BATime = useSelector((state) => state.timeReducer.BATime);
+  const { ABTime, BATime, direction } = useSelector(
+    (state) => state.timeReducer
+  );
 
   let statusText = "";
 
@@ -30,6 +31,28 @@ export const Time = () => {
         isClosable: true,
       });
       return;
+    }
+    if (direction === "aba") {
+      if (ABTime === null || ABTime === "") {
+        toast({
+          title: "Ошибка!",
+          description: "Вы не выбрали время из А в В",
+          status: "error",
+          duration: 5000,
+          isClosable: true,
+        });
+        return;
+      }
+      if (BATime === null || BATime === "") {
+        toast({
+          title: "Ошибка!",
+          description: "Вы не выбрали время из B в A",
+          status: "error",
+          duration: 5000,
+          isClosable: true,
+        });
+        return;
+      }
     }
     history.push("/time/select-quantity/");
   };
