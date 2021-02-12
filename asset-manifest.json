@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/neva-test-task/static/js/main.0a275c9f.chunk.js",
-    "main.js.map": "/neva-test-task/static/js/main.0a275c9f.chunk.js.map",
+    "main.js": "/neva-test-task/static/js/main.b05fe1ee.chunk.js",
+    "main.js.map": "/neva-test-task/static/js/main.b05fe1ee.chunk.js.map",
     "runtime-main.js": "/neva-test-task/static/js/runtime-main.22decaf4.js",
     "runtime-main.js.map": "/neva-test-task/static/js/runtime-main.22decaf4.js.map",
     "static/js/2.ffd5aee3.chunk.js": "/neva-test-task/static/js/2.ffd5aee3.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.22decaf4.js",
     "static/js/2.ffd5aee3.chunk.js",
-    "static/js/main.0a275c9f.chunk.js"
+    "static/js/main.b05fe1ee.chunk.js"
   ]
 }
