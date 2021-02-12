@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/neva-test-task/static/js/main.b05fe1ee.chunk.js",
-    "main.js.map": "/neva-test-task/static/js/main.b05fe1ee.chunk.js.map",
+    "main.js": "/neva-test-task/static/js/main.f66523df.chunk.js",
+    "main.js.map": "/neva-test-task/static/js/main.f66523df.chunk.js.map",
     "runtime-main.js": "/neva-test-task/static/js/runtime-main.22decaf4.js",
     "runtime-main.js.map": "/neva-test-task/static/js/runtime-main.22decaf4.js.map",
-    "static/js/2.ffd5aee3.chunk.js": "/neva-test-task/static/js/2.ffd5aee3.chunk.js",
-    "static/js/2.ffd5aee3.chunk.js.map": "/neva-test-task/static/js/2.ffd5aee3.chunk.js.map",
+    "static/js/2.163875d4.chunk.js": "/neva-test-task/static/js/2.163875d4.chunk.js",
+    "static/js/2.163875d4.chunk.js.map": "/neva-test-task/static/js/2.163875d4.chunk.js.map",
     "index.html": "/neva-test-task/index.html",
-    "static/js/2.ffd5aee3.chunk.js.LICENSE.txt": "/neva-test-task/static/js/2.ffd5aee3.chunk.js.LICENSE.txt"
+    "static/js/2.163875d4.chunk.js.LICENSE.txt": "/neva-test-task/static/js/2.163875d4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.22decaf4.js",
-    "static/js/2.ffd5aee3.chunk.js",
-    "static/js/main.b05fe1ee.chunk.js"
+    "static/js/2.163875d4.chunk.js",
+    "static/js/main.f66523df.chunk.js"
   ]
 }
