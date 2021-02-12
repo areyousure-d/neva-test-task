@@ -61,10 +61,18 @@ export const Time = () => {
     history.push("/time/select-direction");
   };
 
-  if (ABTime !== null && ABTime !== "") {
+  if (
+    ABTime !== null &&
+    ABTime !== "" &&
+    (direction === "ab" || direction === "aba")
+  ) {
     statusText = `из А в В в ${ABTime}`;
   }
-  if (BATime !== null && BATime !== "") {
+  if (
+    BATime !== null &&
+    BATime !== "" &&
+    (direction === "ba" || direction === "aba")
+  ) {
     statusText += ` из В в А в ${BATime}`;
   }
   if (
@@ -73,6 +81,9 @@ export const Time = () => {
   ) {
     statusText = "вы пока не выбрали время";
   }
+
+  console.log("BATime", BATime);
+  console.log("direction", direction);
 
   return (
     <SubpageTemplate

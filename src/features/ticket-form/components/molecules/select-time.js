@@ -13,21 +13,25 @@ const SelectTime = () => {
     (state) => state.timeReducer
   );
 
-  const [ABValue, setABValue] = useState("");
-  const [BAValue, setBAValue] = useState("");
-
   let ABOptionsValue = [];
   let ABOptions = [];
   let BAOptionsValue = [];
   let BAOptions = [];
 
+  const onChange = (e) => {
+    if (direction === "ab" || direction === "aba") {
+      dispatch(setABTime(e.target.value));
+    }
+    if (direction === "ba") {
+      dispatch(setBATime(e.target.value));
+    }
+  };
+
   const ABOnChange = (e) => {
-    setABValue(e.target.value);
     dispatch(setABTime(e.target.value));
   };
 
   const BAOnChange = (e) => {
-    setBAValue(e.target.value);
     dispatch(setBATime(e.target.value));
   };
 
@@ -75,10 +79,9 @@ const SelectTime = () => {
   return (
     <div>
       <h1>Выберите время отправления</h1>
-      <h2>Из A в В </h2>
       <Select
-        value={getLocalTime(ABTime)}
-        onChange={ABOnChange}
+        value={direction !== "ba" ? getLocalTime(ABTime) : getLocalTime(BATime)}
+        onChange={onChange}
         placeholder="Выберите время"
       >
         {direction === "ab" && ABOptions}
