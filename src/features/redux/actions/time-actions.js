@@ -22,5 +22,5 @@ export const setBATime = (time) => ({
 
 export const setQuantity = (quantity) => ({
   type: SET_QUANTITY,
-  payload: quantity,
+  payload: Number(quantity),
 });
