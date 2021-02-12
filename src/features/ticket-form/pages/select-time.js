@@ -82,9 +82,6 @@ export const Time = () => {
     statusText = "вы пока не выбрали время";
   }
 
-  console.log("BATime", BATime);
-  console.log("direction", direction);
-
   return (
     <SubpageTemplate
       title="Выберите время"
